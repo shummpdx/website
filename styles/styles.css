@@ -1,0 +1,204 @@
+* {
+    font-family: Inconsolata, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+body {
+    font-style: normal;
+    font-variant: normal;
+    height: 100vh;
+    cursor: default;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 50px 110px;
+}
+
+.navbar-container {
+    display: flex;
+    color: #58e953;
+    justify-content: space-between;
+    border-bottom: 2px solid orange;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+}
+
+.navbar-item {
+	margin: 0.4em;
+	width: 100%;
+}
+
+.home-link {
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.navbar-link {
+    font-size: 20px;
+}
+
+.home-link,
+.navbar-link {
+	color: var(--text-color-green);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-links {
+	display: flex;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    list-style-type: none;
+    max-height: max-content;
+    width: 100%;
+    height: 100%;
+}
+
+.headers {
+    color: white;
+    font-size: 25px;
+}
+
+.seperator {
+    border-bottom: 2px solid orange;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+.skillContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-row-gap: 50px;
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .skillContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        grid-column-gap: 100px;
+    }
+    
+}
+
+@media (min-width: 1201px) {
+    .skillContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 90px;
+    padding: 50px; 
+}
+
+#project{ 
+   box-shadow: 0 15px 30px 1px rgb(73, 73, 73); 
+   background: rgba(255, 255, 255, 0.90); 
+   text-align: center;
+   border-radius: 5px; 
+   overflow: hidden; 
+   /*margin: 3% 6%;*/
+   height: 350px; 
+   width: 500px;
+}
+
+.product-details {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 30%;
+}
+
+#project .product-details h1{
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    color: #344055;
+    margin: 0;
+}
+
+#project .product-details h1:before{
+    position: absolute;
+    right: 0%; 
+    top: 0%;
+    transform: translate(25px, -15px);
+    font-family: 'Bree Serif', serif;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+}
+
+#project .product-details > p {
+font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 18px;
+    color: #7d7d7d;
+    
+}
+
+.control{
+    position: absolute;
+    bottom: 20%;
+    left: 22.8%;
+}
+    
+.product-image {
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: fit-content;
+}
+
+#project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.2);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.3);}
