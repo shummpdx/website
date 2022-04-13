@@ -9,14 +9,15 @@ body {
     height: 100vh;
     cursor: default;
     background-color: #1f1f1f;
-    color: white;
-    padding: 10px 40px;
+    color: white; 
+    /*padding: 10px 40px;*/
+    padding: 2% 20%;
 }
 
 .about {
     text-indent: 30px;
     text-align: justify;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .navbar-container {
@@ -73,6 +74,11 @@ body {
     color: white;
     font-size: 25px;
     text-align: center;
+}
+.headerSeperator {
+    border-bottom: 2px solid orange;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 .seperator {
@@ -235,7 +241,7 @@ body {
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.3);}
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
     body {
         font-style: normal;
         font-variant: normal;
@@ -243,7 +249,6 @@ body {
         cursor: default;
         background-color: #1f1f1f;
         color: white;
-        padding: 50px 110px;
     }
 
     .about {
@@ -265,7 +270,6 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
         row-gap: 90px;
-        padding: 50px; 
     }
 
     #project { 
