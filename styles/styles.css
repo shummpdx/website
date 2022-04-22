@@ -164,7 +164,7 @@ body {
 }
 
 #project .product-details h1{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     display: inline-block;
     position: relative;
     font-size: 22px;
@@ -295,7 +295,7 @@ body {
     }
 
     #project .product-details h1{
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Bebas Neue';
         display: inline-block;
         position: relative;
         font-size: 30px;
